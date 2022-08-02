@@ -1,0 +1,22 @@
+package introduction;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class SignUp{
+
+    @Test
+    public void MWsignup() throws InterruptedException
+    {
+        System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\preethi.b\\\\Desktop\\\\CD/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://mobileworld.azurewebsites.net/index.html");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[@class='btn btn-warning my-2 my-sm-0']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.linkText("Sign up")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys("Preethi");
+        Thread.sleep(2000);
