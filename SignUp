@@ -28,5 +28,6 @@ public class SignUp{
         driver.findElement(By.cssSelector("input[min='0']")).sendKeys("7338314077");
         driver.findElement(By.cssSelector("textarea[rows='3']")).sendKeys("Hello");
         driver.findElement(By.cssSelector("button[class='btn btn-info form-control']")).click();
+	driver.quit();
     }
 	}
