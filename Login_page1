@@ -1,0 +1,26 @@
+package introduction;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class locators {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\preethi.b\\Desktop\\CD/chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
+		driver.get("https://mobileworld.azurewebsites.net/index.html");
+		   Thread.sleep(2000);
+	        driver.findElement(By.xpath("//button[@class='btn btn-warning my-2 my-sm-0']")).click();
+	        driver.findElement(By.id("username")).sendKeys("Preethi");
+	        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("preethi@07");
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//a[@class='btn btn-primary btn-block']")).click();
+
+
+	}
+
+}
