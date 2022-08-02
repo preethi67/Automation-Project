@@ -26,3 +26,7 @@ public class SignUp{
         driver.findElement(By.cssSelector("input[type='date']")).sendKeys("29-7-2022");
         driver.findElement(By.xpath("/html/body/div/div[2]/form/div[3]/div[4]/input")).click();
         driver.findElement(By.cssSelector("input[min='0']")).sendKeys("7338314077");
+        driver.findElement(By.cssSelector("textarea[rows='3']")).sendKeys("Hello");
+        driver.findElement(By.cssSelector("button[class='btn btn-info form-control']")).click();
+    }
+	}
