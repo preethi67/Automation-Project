@@ -14,3 +14,8 @@ public class locators {
 	    WebDriver driver = new ChromeDriver();
 		driver.get("https://mobileworld.azurewebsites.net/index.html");
 		   Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='btn btn-warning my-2 my-sm-0']")).click();
+	        driver.findElement(By.id("username")).sendKeys("Preethi");
+	        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("preethi@07");
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//a[@class='btn btn-primary btn-block']")).click();
