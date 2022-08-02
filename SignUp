@@ -22,3 +22,7 @@ public class SignUp{
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("B");
         driver.findElement(By.cssSelector("input[type='Email']")).sendKeys("preethib.gowda76@gmail.com");
+        driver.findElement(By.cssSelector("input[placeholder='Password']")).sendKeys("preethi@007");
+        driver.findElement(By.cssSelector("input[type='date']")).sendKeys("29-7-2022");
+        driver.findElement(By.xpath("/html/body/div/div[2]/form/div[3]/div[4]/input")).click();
+        driver.findElement(By.cssSelector("input[min='0']")).sendKeys("7338314077");
